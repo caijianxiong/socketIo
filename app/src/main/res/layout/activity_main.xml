@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+<!--client-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/bt_startClient"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="连接" />
+
+            <Button
+                android:id="@+id/bt_closeClient"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="断链" />
+
+            <Button
+                android:id="@+id/btnSpeak"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="播报" />
+
+            <Button
+                android:id="@+id/bt_sendClientMsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="发送" />
+
+
+        </LinearLayout>
+
+<!--server-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/bt_startServer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="开服务" />
+
+            <Button
+                android:id="@+id/bt_stopServer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="停服务" />
+
+            <Button
+                android:id="@+id/bt_broadMsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="服务广播" />
+
+            <Button
+                android:id="@+id/bt_localIP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="本端IP" />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+            <Button
+                android:id="@+id/bt_startApkService"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="启动apkService" />
+
+
+            <Button
+                android:id="@+id/bt_httpDiscover"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="http探测" />
+
+            <Button
+                android:id="@+id/bt_beep"
+                android:text="亮灯"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/bt_test"
+                android:text="单机测试"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/et_input"
+        android:hint="发送的消息"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <EditText
+        android:id="@+id/et_ip"
+        android:hint="输入服务端IP，再连接"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_log"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Hello World!"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/bt_clearLog"
+            android:text="清理日志"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

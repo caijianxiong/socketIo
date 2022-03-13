@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <base-config cleartextTrafficPermitted="true"/>
+<!--    <domain-config>-->
+<!--        <domain includeSubdomains="true">192.168.10.90</domain>-->
+<!--        <trust-anchors>-->
+<!--            <certificates src="@raw/sng_certificate"/>-->
+<!--        </trust-anchors>-->
+<!--    </domain-config>-->
+</network-security-config>
